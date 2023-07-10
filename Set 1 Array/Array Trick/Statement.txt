@@ -1,0 +1,53 @@
+You are given an array of length n. Your task is to perform 4 types of queries sequentially. Each type of query is performed a certain number of times say, l1, l2, l3, l4. Each query is performed on a subarray from l to r, and a value x  is operated on the subarray.
+
+             1: Each element of the subarray is added by x.
+
+             2: Each element of the subarray is subtracted by x.
+
+             3: Each element of the subarray is xor with x.
+
+             4: Each element of the subarray is multiplied by x.   
+
+  Note: As the multiplication can be rather large, apply mod 1000000007.  
+
+/---------------------------------------------------------------------------------------------
+
+Input:
+
+first line of input contains single integer n(1 <= n <= 1e6) -- length of the array
+
+the second line has n integers ai(1 <= ai <= 1e9)
+
+then next line has 4 integers L1(1 <= L1 <= 1e7),  L2(1 <= L2 <= 1e7),  L3(1 <= L3 <= 1e7),  L4(1 <= L4 <= 1e7) -- number of queries of type-1, type-2, type-3, and type-4 respectively.
+
+next L1 lines contains 3 integers l(1 <= l <= n), r(1 <= r <= n), x(1 <= x <= 1e9)  for type 1 query
+
+next L2 lines contains 3 integers l(1 <= l <= n), r(1 <= r <= n), x(1 <= x <= 1e9) for  type 2 query
+
+next L3 lines contains 3 integers l(1 <= l <= n), r(1 <= r <= n), x(1 <= x <= 1e9) for  type 3 query
+
+next L4 lines contains 3 integers l(1 <= l <= n), r(1 <= r <= n), x(1 <= x <= 1e9) for  type 4 query.
+
+/---------------------------------------------------------------------------------------------
+
+Output:
+
+Print n space separated integers -- final array
+
+ 
+/---------------------------------------------------------------------------------------------
+
+SAMPLE INPUT :- 
+5
+1 1 1 1 1
+2 2 1 2
+1 3 1
+3 5 2
+1 1 1
+5 5 3
+2 5 2
+1 2 1
+3 4 3
+
+SAMPLE OUTPUT 
+1 0 18 3 2

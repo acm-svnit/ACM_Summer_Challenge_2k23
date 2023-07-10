@@ -1,0 +1,50 @@
+Alice came up with a challenge for Bob. Initially, Alice has two numbers a and b in her sequence. She then performs the following operation exactly n-2 times :
+
+Selects any two numbers from the sequence and insert the product of these numbers in the sequence.
+After each operation the length of the sequence increases by exactly 1.
+
+She then gives the final sequence to Bob. Now Bob has the guess the initial two numbers of the sequence a, b. Help Bob find these numbers.
+
+/---------------------------------------------------------------------------------------------
+
+Input:
+
+The first line of the input contains a single integer t (1≤t≤100 ) — the number of test cases. The description of the test cases follows.
+
+The first line of each test case contains a single integer n (3≤n≤100 ) — the size of the final sequence.
+
+The next line of each test case contains n integers in the range [ 10-9, 109 ] — the shuffled list of numbers in the sequence.
+
+It is guaranteed that the input was generated using the process described above.
+
+
+/---------------------------------------------------------------------------------------------
+
+Output:
+
+For each test case, output a single integer |a| + |b|.
+
+a b — initial numbers of the sequence.
+
+
+/---------------------------------------------------------------------------------------------
+
+SAMPLE INPUT :- 
+5
+3
+-3 1 -3
+4
+1 -1 -1 1
+5
+2 8 -4 -2 16
+4
+6 12 2 3
+5
+0 -1 0 0 0
+
+SAMPLE OUTPUT 
+4
+2
+4
+5
+1

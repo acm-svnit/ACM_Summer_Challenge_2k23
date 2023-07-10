@@ -1,0 +1,43 @@
+Anuj found himself torn between the enchanting, rapidly growing trees of the magical land and the practical concerns of the government. To address the dangers posed by overhead power lines, the government decided to cut the trees, but Anuj was determined to find a way to save time in the process. However, their decision faced criticism from NGOs, leading the government to implement a new approach: cutting the trees to a specific length, denoted as l.
+
+In this scenario, there is a straight line containing n trees. Anuj can cut down all the consecutive trees that are longer than l in a single second. He turned to you for help in determining the time it would take to complete this task.
+
+There are two types of queries that Anuj can ask:         
+
+0:    Anuj asks how much time it will take to cut the trees.         
+
+1:    k,d: a kth tree grows by d length.
+
+
+/---------------------------------------------------------------------------------------------
+
+Input:
+
+The first line contains three integers n, p, and l (1 <= n, p <= 106, 1 <= l <= 109 )- the number of tress, the number of queries, and the maximum length of the tree.
+
+The second line contains n integers vi (1 <= vi <= 109 ) - the initial height of the tree.
+
+Each of the following p lines contains a request of either type:
+
+->   0
+->   1 k d (1 <= k <= n, 1 <= d <= 109)
+
+/---------------------------------------------------------------------------------------------
+
+Output:
+
+for each query 0 prints the minimum time.
+ 
+/---------------------------------------------------------------------------------------------
+
+SAMPLE INPUT :- 
+1 3 1
+1
+0
+1 1 1
+0
+
+
+SAMPLE OUTPUT 
+0
+1
