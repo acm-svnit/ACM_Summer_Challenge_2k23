@@ -11,4 +11,4 @@ ACM SUMMER CHALLENGE 2k23 - https://assessment.hackerearth.com/challenges/new/co
 
 * [Rutvik R](https://github.com/Rutvik-R)
 * [Jainesh M](https://github.com/Red-0510)
-* [Yagnik D]()
+* [Yagnik D](https://github.com/yagnik28)
