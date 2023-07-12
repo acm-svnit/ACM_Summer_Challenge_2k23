@@ -1,0 +1,38 @@
+In a city, there are n people, and a medical camp has been set up to assess the fitness of each individual. Once the camp concludes, a race is organized by the committee. Based on the medical reports, it is determined that each person has a specific running capacity(the maximum distance that a person can run), which is represented by an array called "capacity." The i-th indexed number in the array denotes the running capacity of the i-th person. Additionally, an array of speeds is provided, where the i-th indexed number represents the speed of the i-th person.
+
+However, a mishap occurred when my younger brother approached me and accidentally shuffled the values in the speed array. Now, I am tasked with assigning speeds to each person, ensuring that each speed is assigned to only one individual. The goal is to minimize the whole race time(t1) and maximize the time taken by the winner to run as much as his capacity(t2). Now, you need to print the average of both times  (  floor((t1 + t2)/2)   ).
+
+When all people complete their running as much as their capacity then the whole race is over.
+
+who completes the running as much as his/her capacity then the race for that person is over.
+
+/***************************************************************/
+
+
+Input :
+
+The first line contains a single integer t(1 <= t <= 1e4) — the number of test cases.
+
+The first line of each test case contains a single integer n(1 <= n <= 1e5) — the number of people in the city.
+
+The second line contains n integers a1, a2, …, an (1 <= ai <= 1e9) — the capacity of every people.
+
+The third line contains n integers b1, b2, …, bn (1 <= bi <= 1e9) — the speed of every people.
+
+/***************************************************************/
+
+
+Output :
+
+For each test case, print an integer — the largest integer smaller than or equal to the average of the minimum race time and the maximum time for the winner.
+
+/***************************************************************/
+
+Sample Input:
+1
+4
+45 12 20 17
+6 5 10 8
+
+Sample Output:
+3

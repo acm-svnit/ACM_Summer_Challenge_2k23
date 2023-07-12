@@ -1,0 +1,66 @@
+You are the owner of a popular food delivery app that delivers food items ranging from healthy to health deteriorating, whatever the customer wants. Now to help the customer find their best food, you want your coders to build an algorithm that finds the best food depending on the filters chosen by the customer.
+
+You have two integers n - the total number of food items and k - the length of filters. In addition, you have a string s consisting of 0's and 1's. An ingredient - not liked by the customer is '0' and '1' if liked. Then you have all n items of food with their k ingredient values. Your task is to sort the food items as wanted by the customer.
+
+Will you help the team succeed and come out on top? Or are you going to watch your colleagues take the glory?
+
+Note: ingredient priority is from left to right.
+For e.g.
+
+5 5
+10100
+6 14 52 17 6
+74 78 78 42 83
+81 74 11 70 10
+76 92 86 6 44
+25 5 60 63 50
+
+Here first character is 1, which means descending order, therefore thr order becomes
+
+81 74 11 70 10 
+76 92 86 6 44 
+74 78 78 42 83 
+25 5 60 63 50
+6 14 52 17 6
+
+After second character is 0, which means ascending order, and so on. So the final order would be,
+
+81 74 11 70 10 
+76 92 86 6 44 
+74 78 78 42 83
+25 5 60 63 50
+6 14 52 17 6
+
+Therefore the answer is 3 4 2 5 1
+
+
+/***************************************************************/
+
+
+Input :
+
+first line contains two integers n(1 <= n <= 5*10^5) and, k(1 <= k <= 100)
+next line contains a string of length k
+for next n lines, each line contains k numbers ai(1 <= ai <= 10^9) 
+
+
+/***************************************************************/
+
+
+Output :
+
+return n numbers (order of ids)
+
+/***************************************************************/
+
+Sample Input:
+5 5
+10100
+6 14 52 17 6
+74 78 78 42 83
+81 74 11 70 10
+76 92 86 6 44
+25 5 60 63 50
+
+Sample Output:
+3 4 2 5 1
